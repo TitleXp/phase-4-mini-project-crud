@@ -1,3 +1,7 @@
-Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+Rails.application.routes.draw do # run 'rails routes' in terminal
+  resources :spices, except: [:show, :edit]
+  # get '/spices', to: "spices#index"
+  # get '/spices/:id', to: "spices#show"
+  
+
 end
